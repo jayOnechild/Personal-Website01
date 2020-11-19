@@ -1,6 +1,6 @@
 <?php 
 
-$conn = mysqli_connect('localhost', 'jay','jaymag', 'jackson');
+$conn = mysqli_connect('localhost', 'jay','jaymag', 'personal_blog');
 
 if (!$conn){
     echo 'There was an error connecting to the database'.mysqli_connect_error();
@@ -10,12 +10,6 @@ $sql = 'SELECT fullnames, comment, id FROM jacks_blog';
 $result = mysqli_query($conn, $sql);
 
 $details = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-print_r($details);
-
-//MICROSOFT CERTIFICATES GENERATOR
-//https://mspcert.azurewebsites.net/
-//https://mspglobal.azurewebsites.net/certificates/
 
 ?>
 
@@ -37,6 +31,7 @@ print_r($details);
     padding: 15% !important;
     text-align: center; 
   }
+        
         
    </style>
  
