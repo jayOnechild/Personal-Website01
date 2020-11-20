@@ -22,6 +22,9 @@ $details = mysqli_fetch_all($result, MYSQLI_ASSOC);
     .info{
             text-align: center;
         }
+        h1{
+            text-align: center;
+        }
     </style>    
 </head>
 <body>
